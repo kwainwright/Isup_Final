@@ -1,0 +1,2 @@
+module IsupHelper
+end
