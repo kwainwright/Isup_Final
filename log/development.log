@@ -2903,3 +2903,1311 @@ SocketError (getaddrinfo: No such host is known. ):
   Rendered C:/Users/kwainwri/Development/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
   Rendered C:/Users/kwainwri/Development/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
   Rendered C:/Users/kwainwri/Development/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2263.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-30 23:02:58 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 301ms (Views: 293.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-d2c7fb3c750c29ee77646a7db6fa233082b291f4f4f7cc3ad50ba3ba9ef0c9c0.css?body=1" for 127.0.0.1 at 2016-06-30 23:02:58 -0400
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-06-30 23:03:06 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iYhzdpsm+wWSkynE4VDKUFY2Svr7NWATSzO1kRWlkDoFnjK2ByxGbNZO3bhN5TggLoqDDEBMBXuB5rg3grn0lA==", "url"=>"google.com", "commit"=>"or just me"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for nil port 80)):
+  app/controllers/isup_controller.rb:19:in `url_exist?'
+  app/controllers/isup_controller.rb:44:in `validate'
+
+
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.6ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.1ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (106.2ms)
+
+
+Started POST "/__web_console/repl_sessions/a7740766391dbea665733c8f681e3528/trace" for 127.0.0.1 at 2016-06-30 23:03:57 -0400
+
+
+Started POST "/__web_console/repl_sessions/a7740766391dbea665733c8f681e3528/trace" for 127.0.0.1 at 2016-06-30 23:03:59 -0400
+
+
+Started POST "/__web_console/repl_sessions/a7740766391dbea665733c8f681e3528/trace" for 127.0.0.1 at 2016-06-30 23:04:01 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-30 23:04:38 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-06-30 23:04:43 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R6akJWxAV/uXv1zCJaeOPaA9bM+KEclyHy/XRfa6FX3LsOXl8ErqktNiqL6JEnxN2IGlOTForBrV+trjYaZx0w==", "url"=>"google.com", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 117ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-30 23:04:46 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-06-30 23:04:51 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"24jFSdj4jLnGoV5F3IvbVko+UsNgvUIpzWjAvga96L1XnoSJRPIx0IJ8qjlwPikmMoKbNdvEJ0EHvc0YkaGMEw==", "url"=>"dgdshfggd.com", "commit"=>"or just me"}
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+SocketError (Failed to open TCP connection to dgdshfggd.com:80 (getaddrinfo: nodename nor servname provided, or not known)):
+  app/controllers/isup_controller.rb:45:in `url_exist?'
+  app/controllers/isup_controller.rb:26:in `validate'
+
+
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.9ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (97.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:07:09 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:07:21 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/W9ggsMnEAhaqKiHOVDsNdLCZpSofuoBW52z0NlCiWhxeSFCXy2tYR51XPuV5R5Fqn6vYhMHj2mRSL52Tl7txg==", "url"=>"google.com", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 115ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:07:23 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:07:26 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sMsTo5ta9B0q+g1R1PVDpVj7v4HgFEJiyA2ts2Ba+uE83VJjB1BJdG4n+S14QLHVIEd2d1ttJwoC2KAV90aeTw==", "url"=>"google.com", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 91ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:07:28 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:07:34 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zsE3cXPKB9JPDVOcFux7nUQofGtInz2O/jhNVDQe4xhC13ax78C6uwvQp+C6WYntPJS1nfPmWOY07UDyowKHtg==", "url"=>"sdfdsfddd.com", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 56ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:07:49 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:07:52 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ICvjmN7BKLDPavpmxFKBnlkJJwWI47CiTDROaK1KNfWsPaJYQsuV2Yu3Dhpo53PuIbXu8zOa1cqG4UPOOlZRWw==", "url"=>"ddds", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 49ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:07:54 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:08:01 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DhkczbtUduNJIixft4rGCudztSF3eBE+ba9HwnVNv4eCD10NJ17Lig3/2CMbPzR6n89818wBdFanekpk4lHbKQ==", "url"=>"dsfdfsdfdeeefwefdd.edu", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 40ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:08:02 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:08:06 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WfWZ6xmg5GwvsNUW8HyaLQ9OCeao73IYKhEY/bZjBXLV49grhapZBWttIWpcyWhdd/LAEBOWF3DgxBVbIX9h3A==", "url"=>"ddwf", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 54ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:08:08 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:08:12 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S2Zu8Efy1X2XVSOnYn4Cjex9vV2DdfcO4uqewC2+t6rHcC8w2/hoFNOI19vOy/D9lMF0qzgMkmYoP5NmuqLTBA==", "url"=>"cnn.com", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 114ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:08:14 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:08:22 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sr4bRcUmIW4wAFcYJ8Ujs+u4Xb9eS9nsmPKsVAMHcus+qFqFWSycB3Tdo2SLcNHDkwSUSeUyvIRSJ6HylBsWRQ==", "url"=>"yoohoo.com", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 99ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:08:24 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:08:30 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RZncFmgvxobb3/klrLFvs4c/Q0TIlBZGS/v6LD0Wxo3Jj53W9CV7758CDVkABJ3D/4OKsnPtcy6BLveKqgqiIw==", "url"=>"yoohoo", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 48ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:08:33 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:11:04 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"80qBFKNkNPD84szHp3FprP/481zymclHsVQU/RtF6+l/XMDUP26Jmbg/OLsLxJvch0Q6qkngrC97gRlbjFmPRw==", "url"=>"peacockserver.synology.me", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 112ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:11:07 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:11:19 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XkL70vYcF50X39/hyyJF4WszWg62ZNdwSjhynJbqej7SVLoSahaq9FMCK51nl7eRE4+T+A0dshiA7X86AfYekA==", "url"=>"peacockserve.synology.me", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 264ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:11:21 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:11:50 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+o34qEc5LYJkCthi+ha9K1VmekkLQrcbXVwKo0kY4xN2m7lo2zOQ6yDXLB5Wo09bLdqzv7A70nOXiQcF3gSHvQ==", "url"=>"emauger.synology.me", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 60020ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:13:37 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+o34qEc5LYJkCthi+ha9K1VmekkLQrcbXVwKo0kY4xN2m7lo2zOQ6yDXLB5Wo09bLdqzv7A70nOXiQcF3gSHvQ==", "url"=>"emauger.synology.me", "commit"=>"or just me"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+TypeError (Failed to open TCP connection to http://emauger.synology.me:80 (no implicit conversion of URI::HTTP into String)):
+  app/controllers/isup_controller.rb:46:in `url_exist?'
+  app/controllers/isup_controller.rb:26:in `validate'
+
+
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.8ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (97.1ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:14:13 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+o34qEc5LYJkCthi+ha9K1VmekkLQrcbXVwKo0kY4xN2m7lo2zOQ6yDXLB5Wo09bLdqzv7A70nOXiQcF3gSHvQ==", "url"=>"cnn.com", "commit"=>"or just me"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+TypeError (Failed to open TCP connection to http://cnn.com:80 (no implicit conversion of URI::HTTP into String)):
+  app/controllers/isup_controller.rb:46:in `url_exist?'
+  app/controllers/isup_controller.rb:26:in `validate'
+
+
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.8ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.5ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (96.7ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:14:26 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+o34qEc5LYJkCthi+ha9K1VmekkLQrcbXVwKo0kY4xN2m7lo2zOQ6yDXLB5Wo09bLdqzv7A70nOXiQcF3gSHvQ==", "url"=>"cnn.com", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 137ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:14:28 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:14:36 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aT2Sn+O+HtjNgljVlYw3iww3EIjQEzJg1eL6MyHiHo/lK9Nff7SjsYlfrKk5OcX7dIvZfmtqVwgfN/eVtv56IQ==", "url"=>"youtube.com", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 115ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:14:50 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:14:58 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a1TQUF8lwJgkw6NhFqBX1XcAeOjaIzbGCyJoIS4TtFvnQpGQwy998WAeVx26FaWlD7yxHmFaU67B92WHuQ/Q9Q==", "url"=>"peacockserver.synology.me", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 349ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:15:01 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:15:09 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cfjF+sSTchsDNgpNAjVVQd5janVr+SheHLuDAYfOR9X97oQ6WJnPckfr/jGugKcxpt+jg9CATTbWbo6nENIjew==", "url"=>"emauge.synology.me", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 446ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:15:11 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:15:20 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sqyi8aj4KiEN7fHjOdsHzModxhpo8qoV+SbkoYqBr+Q+uuMxNPKXSEkwBZ+VbvW8sqEP7NOLz30z8+kHHZ3LSg==", "url"=>"emauger.synology.me", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 60021ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:21:14 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sqyi8aj4KiEN7fHjOdsHzModxhpo8qoV+SbkoYqBr+Q+uuMxNPKXSEkwBZ+VbvW8sqEP7NOLz30z8+kHHZ3LSg==", "url"=>"emauge.synology.me", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 30ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:21:15 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:21:18 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GjEgDS6J4maJG/kkMIeYUuX+nWId1aufh4panTE82UuWJ2HNsoNfD83GDVicMmoinUJUlKaszvdNX1c7piC95Q==", "url"=>"emauger.synology.me", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5023ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:22:07 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:22:12 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rgeN3B700iEY+0cuQALdvDuQ2cRb6L7jutIZkQ5QRHciEcwcgv5vSFwms1Lsty/MQywQMuCR24twBxQ3mUwg2Q==", "url"=>"emauge.synology.me", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:22:14 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:22:19 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mBSMXwEAIHz/eRPecN6/LbBYIvLpz5eIU3zJUS+oryIUAs2fnQqdFbuk56Lca01dyOTrBFK28uCZqcT3uLTLjA==", "url"=>"emauger.synology.me", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5026ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:22:27 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:38:49 -0400
+
+SyntaxError (/Users/Kevin/Desktop/Rowan Masters/Adv Web Programming/projects/Isup_Final/app/controllers/isup_controller.rb:102: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/isup_controller.rb:102: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.2ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.9ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (94.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:41:49 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:41:53 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cogaz8H4tdOgYGT2jFkl9GsYHthmjKod5rzyTYm1NwuGnlsPXfIIuuS9kIog7NeEE6TXLt31z3Usaf/rHqlTpQ==", "url"=>"google.com", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:42:00 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:48:50 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YFfWypVeZpoigwmziDuRVJtWMDE9xfkbTgZ9FEPFFH3sQZcKCVTb82Ze/c8kjmMk4+r5x4a8nHOE03Cy1Nlw0w==", "url"=>"google.com", "commit"=>"or just me"}
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `res' for #<IsupController:0x007fa25ac36cd0>):
+  app/controllers/isup_controller.rb:65:in `url_exist?'
+  app/controllers/isup_controller.rb:29:in `validate'
+
+
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.2ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.5ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (91.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:49:20 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 00:49:25 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jn1nVJ9LHVU567n322yMwb8lAWiyX9i2lma4tgWLfMCqayaUA0GgPH02TYt32X6xx5nIngkmvd5cs7UQkpcYbg==", "url"=>"google.com", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 00:49:30 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 22:50:24 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 178ms (Views: 170.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 22:50:29 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zSxefwAEyM+z2S742S/Iu3CxUZ3J5ECXjC/ydqWmRsdTqN1rgo4bdE9CJRx66EQDVETuRhmfVvIAVWXU5F7c6A==", "url"=>"google", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 22:50:35 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 22:50:38 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nkmH+kdz7eTdvdqH4eUWn0amk8X1SmpdZZ3LjBuI2nIAzQTuxfk+XyEm0WNCIponYlMsHiUxfDjp51wuWnBAXQ==", "url"=>"sdfdfdf", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 22:50:39 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 22:50:45 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sOEkr18t6iscnWExKI+FilpY2Ybil4u6fNH9bGP5E6YuZae73ac5kOAGatWLSAkyfq1mXTLsnd/wq2rOIgGJiQ==", "url"=>"ddffd.co,", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 22:50:47 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 22:50:50 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5+UJGzjbuE1Jm8TYaS0Y/orDoiUFT7IL6tqgsTVgySF5YYoPulFr9rUAzzzK6pRGrjYd/tU0pG5moDcTdJhTDg==", "url"=>"sdfdfd.com", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 22:50:53 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 22:50:58 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N9GtCtuOIbCqJwHehz0RljwAhxr3/4mNtsmNH3x51i2pVS4eWQTyC1a8Cjok+p0uGPU4wSeEn+g6sxq9PYFMAg==", "url"=>"www.google.com", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 22:51:00 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:07:36 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MMgVFblUdlGszpVq8yPjKNUeOravnM4bZ55fFKagb+quTJYBO96l6lBVno5Q5G+Q8euFbX/n2H7r5Mi251j1xQ==", "url"=>"google.com", "commit"=>"or just me"}
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `res' for #<IsupController:0x007fece940e308>):
+  app/controllers/isup_controller.rb:63:in `url_exist?'
+  app/controllers/isup_controller.rb:29:in `validate'
+
+
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.6ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.9ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:08:43 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:08:48 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RX428h6aq/v+0F/C7e3RYAHmqUe6VQT00KQckdvGNTTb+rXmnBB4QAJLVCZOKl3YJRMWnGouEpFc3oszmj6vGw==", "url"=>"google.com", "commit"=>"or just me"}
+Completed 500 Internal Server Error in 530ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `res' for #<IsupController:0x007feceb0d24d0>):
+  app/controllers/isup_controller.rb:64:in `url_exist?'
+  app/controllers/isup_controller.rb:29:in `validate'
+
+
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.8ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.6ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (91.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:11:13 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:11:19 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+nE51XrH27LtvawTKQ2WOlzy852+JM+/YVzvcfj847tk9brB+E0ICREmp/eKyhqCeAdMRm5f2drtJnjTuQR5lA==", "url"=>"www.google.com", "commit"=>"or just me"}
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `res' for #<IsupController:0x007feceb08a748>):
+  app/controllers/isup_controller.rb:64:in `url_exist?'
+  app/controllers/isup_controller.rb:29:in `validate'
+
+
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.6ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.7ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (106.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:12:54 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:13:02 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LzFNN9pvD8rNn4I55QSf6wgljyhz4wdlfj5VajI7vXOxtc4jWOXccTEEid1GwxNTLNAw86OYEQDyRMLIc8MnXA==", "url"=>"google.com", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 502ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:13:04 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:13:08 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I5NiUCS0IBT7vrL07vhSfgqutGqYd/8n1xq0QGrnUfa9F+FEpj7zrwcluRBNP97GLlsLsUgM6UJbYCPiKx/L2Q==", "url"=>"google", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 65ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:13:10 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:13:52 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z/Bv2bZ7qyuq3RmbY/K9E2IdMwAD0AK388FRj793LZD5dOzNNPF4kFZGEn/ANTGrRuiM29OrFNJ/u8Yt/o+3vw==", "url"=>"google", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 19ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:13:53 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:13:56 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pmsPg8aO/bXU+M+3TgFqUScdO0kcU1MFhy68Uhe5drs474yXRAQuDihjxFPtxubpA+iEkswoRWALVCvwVkHslA==", "url"=>"google.com", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 82ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:13:59 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:14:06 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q3v2vYpv/y3tX0e1XfpA3/N5/JPeAx7iQXh76hH9mQHd/3WpCOUslhHETFH+Pcxn14xDSA54CIfNAuxIUAUDLg==", "url"=>"sdfd", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 62ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:14:07 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:14:09 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UGI2zp5adGO1kzIpY4l/BsVATMtL3CJ2HA9cgwHj+1DO5rXaHNCn2EkIOc3ATvO+4bXzEJunNBOQdcshQBthfw==", "url"=>"d", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 53ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:14:10 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:23:38 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8tHWiY05aDpj1hBNtnPJBNdF9uur3cnUNq2CHBqJ0kFsVVWdD7O7gZ9NG6kVtEW887BJMHum37G61xW+W3FIbg==", "url"=>"google.com", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 109ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:23:40 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:23:42 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JoIC03TFVgoceyJ0aN3sUAeCgFWIAR8+luwCIYc6Q424BoHH9k+FseDgKZDLGmDoI3c/jlh6CVsalpWDxsLZog==", "url"=>"google", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 20ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:23:44 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:23:48 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gk8HiKgewl4L3BDJHC5gvw6+alfS4gF4HThkT9+/LQEcy4ScKpQR5fdHGy2/6ewHKkvVjAKZFx2RQvPtnke3Lg==", "url"=>"ddf", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 53ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:23:49 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:24:25 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OpinVzlaPDAlg65wBG/yS/7Tx7LBeG/EOXkxw/msMLekHCRDu9Dvi9kYpZSnqH7z2iZ4aREDeaG1A6ZhuFSqmA==", "url"=>"google.com", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:24:27 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:24:30 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+/2rrWTI+JOyVw0iRZzykagerp/OOfTefBGtb5qp5qlleSi55kIrKE7MBsbmW34pjOsRRB5C4rvwazrN21F8hg==", "url"=>"google", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:24:32 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:24:35 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:35:21 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x7BEljs56kee60RdV/Qi5CPxmWTgQfotpyWsFlingrRZNMeCubM5/GJwT7n0M65cBwQmvzA67EgrXzu0GV8Ymw==", "url"=>"google.com", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 92ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:35:23 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:35:27 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PcC20Yv2SGBkegEOS55FJo6S5u++83WbKLCaNCx+7/WjRDXFCXyb25jhCuroWcmeqmdZNG6IY/6kyg2WbYZ12g==", "url"=>"google", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:35:30 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:35:33 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7cCOempHaJWRoPkgoDitrc98sEWN9dbsB38riDa2cRdzRA1u6M27Lm078sQD/yEV64kPnl2OwImLBbwqd07rOA==", "url"=>"dd", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:35:34 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:35:37 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZRdgAVS06Ib11KVphfr2R+7PlUIh+SiO2B7wXKCDKb77k+MV1j47PQlPro0mPXr/yjoqmfGCPutUZGf+4XuzkQ==", "url"=>"dfdsfsd.com", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 49ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:35:38 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:35:43 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k6P4QxM3u1oRNfRvIxzCnTBjDQNELlg6UxZ0yHofhA4NJ3tXkb1o4e2u/4uA204lFJay2JRVTl/fbONqO+ceIQ==", "url"=>"dfdd.e", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:35:49 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:35:54 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z3PQszMzZ3KAreeMxMZc8DZTB8KkRzs38+/HtNusfyxR91Onsbm0yXw27GhnAdBIEqa4GXQ8LVJ/lVAWmlTlAw==", "url"=>"eewrewe.cccc", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 49ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:35:55 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:36:00 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NyJcvm3Z9C7xXoD6JCf8Vvf5LJXZqEoKrOezcymteDKppt+q71MnlQ3Fix6H4HDu0wyTTgnTXG8gnSTRaFXiHQ==", "url"=>"sdfdfd.edu", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 48ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:36:02 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:36:07 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iApkaByw5ol+/uW/3IV8rNoGqiM4IE3Pa+hI2VYFv7cWjud8njo1MoJl7lt/QvAU/vMV+OhbW6rnkt97F/0lmA==", "url"=>"eeee.e", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:36:08 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:36:11 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pQ6+Mk8uRmLq3R+efLN+vv/0CuqTDFDh2itHtTxsYws7ij0mzaSV2RZGFHrfdPIG2wG1MUN3RoRWUdAXfZT5JA==", "url"=>"sdfd", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:36:12 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:36:14 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fPYVJ+RDjpVmbs5bE+2wCQsY7q9JNDeW8ZVUqUu6N1ficpYzZsldLpr1xb+wKjyxL+1RdJlPIfN978MLCkKteA==", "url"=>"", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:36:15 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:36:21 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iPElT7AUzsv5ybweUVgkQ6u4qYxntgz6+LqzAj2cHsMWdaZbMp4dcAVSt/ryn6j7j00WV7fNGp90wCSgfGSE7A==", "url"=>"http://s", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:36:23 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:36:50 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zsLO/D6VgngoHJduyLsD6iBzs+oMemEppVKeoPpWxfVQRk3ovB9Rw9SHnIprfI9SBIYMMdwBd0wpKAkCu65f2g==", "url"=>"ddd", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:36:52 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:36:58 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5qLDLZCXZmXVtoMFx5acacHqADWZFllmwx2lNpTtUY14JkA5Eh213iktiOFkURDR5R+/7kltTwNPZzKU1RXLog==", "url"=>"youtube", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:37:21 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:37:25 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gie59JUqRD8/MBSGDJoCwZnrO5rplc1lz342nDLFx16EozrgF6CXhMOrH2KvXY55vR6EQTnu2wBDBKE+cz1dcQ==", "url"=>"youtube.com", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 104ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:37:26 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:37:32 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xr0EjPTwOyLSXX354eJxJ1qXeeXINmYhgaeqXdyWLvLAOYeYdnromS7Gdh1CJf2ffmLGPhhNcEQN3T3/nW603Q==", "url"=>"youtube.edu", "commit"=>"or just me"}
+  Rendered isup/validate.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 49ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:37:33 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:49:40 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/isup.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-01 23:49:41 -0400
+
+
+Started GET "/assets/requests.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-01 23:49:41 -0400
+
+
+Started GET "/assets/scaffolds.self-d2c7fb3c750c29ee77646a7db6fa233082b291f4f4f7cc3ad50ba3ba9ef0c9c0.css?body=1" for 127.0.0.1 at 2016-07-01 23:49:41 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-01 23:49:41 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-01 23:49:41 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-01 23:49:41 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-01 23:49:41 -0400
+
+
+Started GET "/assets/isup.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-01 23:49:41 -0400
+
+
+Started GET "/assets/application.self-2677a238559d271ccfe6c934e23eae63ebceb6617190d911b71f7df693a5e1f8.js?body=1" for 127.0.0.1 at 2016-07-01 23:49:41 -0400
+
+
+Started GET "/assets/requests.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-01 23:49:41 -0400
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:49:49 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wv+uqsjRlrWz1SzjPP2taHsMDy6BRE06vmb9T2OfpqZcey2+SltFDk9OJwefOiHQX/mw9VE/W18yHGrtImc8iQ==", "url"=>"google.com", "commit"=>"or just me"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "requests" ("timestamp", "url", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["timestamp", "01/07/2016 23:49"], ["url", "http://google.com"], ["status", "Available"], ["created_at", "2016-07-02 03:49:49.561498"], ["updated_at", "2016-07-02 03:49:49.561498"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 122ms (Views: 20.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:49:51 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:49:53 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xCNcfKNsZsc/vWVV6K2IynMq5L0RH9rr7XNZqV2wHu9ap99oIea1fMMmbrFLagRyV99bZsFkzI5hCc4LHEiEwA==", "url"=>"dd", "commit"=>"or just me"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "requests" ("timestamp", "url", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["timestamp", "01/07/2016 23:49"], ["url", "http://dd"], ["status", "URL Format Issue"], ["created_at", "2016-07-02 03:49:53.283002"], ["updated_at", "2016-07-02 03:49:53.283002"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:49:54 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:49:57 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ivKFzfI1yf3Pte7OKvrudMvF8ssiI5tDkaEs9ujq+9AUdgbZcL8aRjMu5SqJPWLM7zBNEPJYjSYd27tUqRJh/w==", "url"=>"sdfd.com", "commit"=>"or just me"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "requests" ("timestamp", "url", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["timestamp", "01/07/2016 23:49"], ["url", "http://sdfd.com"], ["status", "Available"], ["created_at", "2016-07-02 03:49:58.039477"], ["updated_at", "2016-07-02 03:49:58.039477"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 233ms (Views: 15.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:49:59 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:50:04 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gSNUP4g0xEtlH2PGGVoDeHES59vEaIUrDtAQmP44d20fp9crCr4X8JmEaCK6nY/AVedYABQTk06Cqoc6v8DtQg==", "url"=>"dfdfdfs.com", "commit"=>"or just me"}
+Completed 500 Internal Server Error in 1530ms (ActiveRecord: 0.0ms)
+
+Errno::ECONNREFUSED (Failed to open TCP connection to dfdfdfs.com:80 (Connection refused - connect(2) for "dfdfdfs.com" port 80)):
+  app/controllers/isup_controller.rb:58:in `block in url_exist?'
+  app/controllers/isup_controller.rb:56:in `url_exist?'
+  app/controllers/isup_controller.rb:21:in `validate'
+
+
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.8ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Kevin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (100.4ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:50:19 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gSNUP4g0xEtlH2PGGVoDeHES59vEaIUrDtAQmP44d20fp9crCr4X8JmEaCK6nY/AVedYABQTk06Cqoc6v8DtQg==", "url"=>"were.com", "commit"=>"or just me"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "requests" ("timestamp", "url", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["timestamp", "01/07/2016 23:50"], ["url", "http://were.com"], ["status", "Available"], ["created_at", "2016-07-02 03:50:21.177298"], ["updated_at", "2016-07-02 03:50:21.177298"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2172ms (Views: 17.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:50:23 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:50:28 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9jP+NV6/jCDXJHOyw+QYrFLWHxXz9x1mE9wWNtLz07Vot30h3DVfmyu/eFZgI5QUdiOgziOMCwOfpoGUkwtJmg==", "url"=>"eedss.com", "commit"=>"or just me"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "requests" ("timestamp", "url", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["timestamp", "01/07/2016 23:50"], ["url", "http://eedss.com"], ["status", "Available"], ["created_at", "2016-07-02 03:50:30.704494"], ["updated_at", "2016-07-02 03:50:30.704494"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  Rendered isup/validate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2124ms (Views: 15.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:50:32 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:50:36 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cNZp3yVa2cyipeCacSOrTmAwTACxmnRCiqHbcZ7K09fuUurLp9AKd14+637S5Cf2RMXz22HhYicG20zT3zJJ+A==", "url"=>"e", "commit"=>"or just me"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "requests" ("timestamp", "url", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["timestamp", "01/07/2016 23:50"], ["url", "http://e"], ["status", "URL Format Issue"], ["created_at", "2016-07-02 03:50:36.438430"], ["updated_at", "2016-07-02 03:50:36.438430"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  Rendered isup/validate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 16.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:50:37 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/isup/validate" for 127.0.0.1 at 2016-07-01 23:50:47 -0400
+Processing by IsupController#validate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3Xch6x4flORWaJTU8NZa+ckjeegIJXNPp0lyXy+qjKxD86L/nJVHX6rznzBTEdZB7dbGM9heZSorM+X9blIWgw==", "url"=>"eedicdys.edu", "commit"=>"or just me"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "requests" ("timestamp", "url", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["timestamp", "01/07/2016 23:50"], ["url", "http://eedicdys.edu"], ["status", "Not Available"], ["created_at", "2016-07-02 03:50:47.674049"], ["updated_at", "2016-07-02 03:50:47.674049"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  Rendered isup/validate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 48ms (Views: 14.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:50:49 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2016-07-01 23:51:05 -0400
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.2ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/requests/1" for 127.0.0.1 at 2016-07-01 23:51:27 -0400
+Processing by RequestsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Gx1S/IMTQnfqcUJ7StSq/1gAid/AlOTan6wgloODtMiFmdHoAZmRzBbqSZ/pEyZHfPU2BBDv8r8T1rc0wnsu5w==", "id"=>"1"}
+  [1m[35mRequest Load (0.1ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "requests" WHERE "requests"."id" = ?  [["id", 1]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/requests
+Completed 302 Found in 10ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2016-07-01 23:51:27 -0400
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.2ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/requests/2" for 127.0.0.1 at 2016-07-01 23:51:30 -0400
+Processing by RequestsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qjq9wUnjZyUFWdlh4uNQXt/KSnVDS+x8FI0end2pNjE0vj7Vy2m0nvnC0oVBJNzm+z/1rpMw+hmY94k/nFGsHg==", "id"=>"2"}
+  [1m[36mRequest Load (0.1ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "requests" WHERE "requests"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/requests
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2016-07-01 23:51:30 -0400
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.1ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/requests/3" for 127.0.0.1 at 2016-07-01 23:51:31 -0400
+Processing by RequestsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1uKlbV/Hcd+6oL2TfNgFYPKlo4JASkBoql2OnILl8gNIZiZ53U2iZEY7tnffH4nY1lAcWZAxVg0mJxk+wx1oLA==", "id"=>"3"}
+  [1m[35mRequest Load (0.1ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "requests" WHERE "requests"."id" = ?  [["id", 3]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/requests
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2016-07-01 23:51:31 -0400
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.2ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/requests/4" for 127.0.0.1 at 2016-07-01 23:51:33 -0400
+Processing by RequestsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"v3ZrNaEbaeZ/dDglqadecUSsn/tbWshg9bcWMGJTu0wh8ughI5G6XYPvM8EKYNLJYFkgIIsh3gV5zYGSI6shYw==", "id"=>"4"}
+  [1m[36mRequest Load (0.1ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "requests" WHERE "requests"."id" = ?[0m  [["id", 4]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/requests
+Completed 302 Found in 3ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2016-07-01 23:51:33 -0400
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.1ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/requests/5" for 127.0.0.1 at 2016-07-01 23:51:35 -0400
+Processing by RequestsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"T10yj0eN5JwJyZ6v+C1qVHBDXu9bmlAtigi8uCFWDZ7R2bGbxQc3J/VSlUtb6ubsVLbhNIvhRkgGcisaYK6XsQ==", "id"=>"5"}
+  [1m[35mRequest Load (0.1ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "requests" WHERE "requests"."id" = ?  [["id", 5]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/requests
+Completed 302 Found in 3ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2016-07-01 23:51:35 -0400
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.1ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/requests/6" for 127.0.0.1 at 2016-07-01 23:51:37 -0400
+Processing by RequestsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"D4vYRJsgnUu5ZfYPi+iFqcOPZsEDVig3J8ya3zFNd7+RD1tQGapO8EX+/esoLwkR53rZGtMtPlKrtg19cLXtkA==", "id"=>"6"}
+  [1m[36mRequest Load (0.1ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "requests" WHERE "requests"."id" = ?[0m  [["id", 6]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/requests
+Completed 302 Found in 3ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2016-07-01 23:51:37 -0400
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.1ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/requests/7" for 127.0.0.1 at 2016-07-01 23:51:39 -0400
+Processing by RequestsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+6myzrin16pTBuuyphg5CixqodkZOY3gRJJAHgIfKndlLTHaOi0EEa+d4FYF37WyCJ8eAslCm4XI6Ne8Q+ewWA==", "id"=>"7"}
+  [1m[35mRequest Load (0.1ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "requests" WHERE "requests"."id" = ?  [["id", 7]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/requests
+Completed 302 Found in 3ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2016-07-01 23:51:39 -0400
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.2ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2016-07-01 23:51:42 -0400
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.1ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-01 23:51:46 -0400
+Processing by IsupController#index as HTML
+  Rendered isup/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)

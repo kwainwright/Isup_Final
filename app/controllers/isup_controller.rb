@@ -1,31 +1,5 @@
 class IsupController < ApplicationController
   def index
-    require 'date'
-
-    current_time = DateTime.now
-
-    current_time.strftime "%d/%m/%Y %H:%M"
-    # => "14/09/2011 17:02"
-
-    current_time.next_month.strftime "%d/%m/%Y %H:%M"
-    # => "14/10/2011 17:02"
-
-  require "net/http"
-  def url_exist?(url_string)
-  url = URI.parse(url_string)
-  req = Net::HTTP.new(url.host, url.port)
-  req.use_ssl = (url.scheme == 'https')
-  path = url.path if url.path.present?
-  res = req.request_head(path || '/')
-  if res.kind_of?(Net::HTTPRedirection)
-    url_exist?(res['location']) # Go after any redirect and make sure you can access the redirected URL 
-  else
-    ! %W(4 5).include?(res.code[0]) # Not from 4xx or 5xx families
-  end
-rescue Errno::ENOENT
-  false #false if can't find the server
-end
-
 
   end
 
@@ -39,49 +13,59 @@ end
   end
   
   def validate
-    @url = params[:url]
+    @url_string = params[:url]
     
-    if url_exist?(@url)
-      @status = "Available"
-    else
-      @status = "Not Available"
+    if !is_valid_url?(@url_string)
+      @status = "URL Format Issue"
+    else 
+      if url_exist?(@url_string)
+        @status = "Available"
+      else
+        @status = "Not Available"
+      end
     end
-    #format.html {render :failure}
+    
+    require 'date'
+    current_time = DateTime.now
+
+    request = Request.new
+    request.timestamp = current_time.strftime "%d/%m/%Y %H:%M"
+    request.url = @url_string
+    request.status = @status
+    
+    request.save
   end
   
   protected
   
-   require "net/http"
+  def is_valid_url?(url_str)
+    url = url_str
+    url.insert(0, "http://") unless(url.match(/^http\:\/\//))
+    url =~ /^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(([0-9]{1,5})?\/.*)?$/ix
+  end
   
-   def url_exist?(url_string)
-    url = URI.parse(url_string)
-    url.port = 80
-    http = Net::HTTP.start(url.host, url.port, {open_timeout: 5, read_timeout: 5})
-    response = http.head("/")
-    response.code == "200"
+  require "net/http"
+   
+  def url_exist?(url_str)
+    
+    url = url_str
+    # check if http:// was in the url if not add it in there
+    url.insert(0, "http://") unless(url.match(/^http\:\/\//))
+ 
+    begin
+      Timeout::timeout(5) do
+        # Get the HTTP_RESPONSE from the site we are checking
+        res = Net::HTTP.get_response(URI.parse(url.to_s))
+        
+        # Check the response code and send an email if the code is bad
+        unless(res.code =~ /2|3\d{2}/ ) then
+         false
+        else
+         true
+        end
+      end   
     rescue Timeout::Error, SocketError
       false
-   end
- #   req = Net::HTTP.new(url.host, url.port)
- #   res = req.request_head(url.path)
- #   if res == "200"
- #     true
- #   else
- #     false
- #   end
- #   rescue
- #     false
- #  end
-    #req.use_ssl = (url.scheme == 'https')
-    #path = url.path if url.path.present?
-    #res = req.request_head(path || '/')
-    #if res.kind_of?(Net::HTTPRedirection)
-    #  url_exist?(res['location']) # Go after any redirect and make sure you can access the redirected URL 
-    #else
-    #  ! %W(4 5).include?(res.code[0]) # Not from 4xx or 5xx families
-    #end
-    #rescue Errno::ENOENT
-    # false #false if can't find the server
-    #end
-  
+    end
+  end
 end
